@@ -95,17 +95,17 @@ class Transformer(nn.Module):
         x=self.mlp(x)
         x=residue+x
         return x
-class Encoder(nn.Module):
-    def __init__(self,cfg):
-        self.transformers=nn.Sequential(
-            [
-                Transformer(cfg["dim"],cfg["n_heads"])for _ in cfg["layers"]
+# class Encoder(nn.Module):
+#     def __init__(self,cfg):
+#         self.transformers=nn.Modulelist(
+#             [
+#                 Transformer(cfg["dim"],cfg["n_heads"])for _ in cfg["layers"]
                 
-            ]
-        )
+#             ]
+#         )
         
-    
-        
+    import pandas as pd
+    dataset=pd.read_csv()
     
 
         
